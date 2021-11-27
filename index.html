@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Programación WEB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            margin: 0;
+            background-color: #0e0e10;
+            padding: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            color: white;
+            height: 500px;
+            /* only for     demonstration, should be removed */
+            background: #0e0e10d8;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            color: white;
+            width: 70%;
+            background-color: #0e0e10ee;
+            height: 500px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Programación WEB</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h2>Programación web</h2>
+                <h4>Examen parcial 3</h4>
+                <li><a href="scripts/php/vista/login.html">Sistema Abcc</a></li>
+                
+
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Felipe Márquez</h1>
+            <br>
+            <p>Numero de control: S18070182</p>
+            <p>Dirección de correo: flype360360@gmail.com</p>
+            <p>Historial:</p>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium.</p>
+        
+            </article>
+        
+    </section>
+    
+
+    <footer>
+        <p>Conoce más acerca de nosotros ...</p>
+
+    </footer>
+
+</body>
+
+</html>
